@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maaf untuk fadillah Sayangnyo abg😘</title>
+    <style>
+        body {
+            background-color: #fff5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden; /* Mencegah scroll bar */
+        }
+        .slide {
+            display: none;
+            animation: fade 1s;
+        }
+        .active {
+            display: block;
+        }
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .button {
+            background-color: #ff6666;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #ff1a1a;
+        }
+        .love-message {
+            font-size: 40px; /* Ukuran font yang besar */
+            color: #ff3366; /* Warna yang menarik */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Maaf Fadillah Sayang 😘</h1>
+
+    <div class="slide active">
+        <h2> Maafkan Abg 🙏</h2>
+        <p>Fadillah, abg ingin minta maaf atas semua kesalahan yang telah abg buat. Abg sadar abg sering menyakiti hati syg ❤️💔.</p>
+        <p>Syg ❤️ adalah segalanya bagi abg, dan abg sangat menyesal 😢.</p>
+    </div>
+
+    <div class="slide">
+        <h2> Kenangan Indah 🌹</h2>
+        <p>Ingatkah syg ❤️ saat kita pergi jalan-jalan ? ✨ Semua momen indah itu membuat abg ingin berusaha lebih baik.</p>
+        <p>Abg tidak ingin kehilangan syg ❤️, Fadillah sayang! 🥺💕</p>
+    </div>
+
+    <div class="slide">
+        <h2> Janji untuk Memperbaiki 💖</h2>
+        <p>Abg berjanji untuk lebih mendengarkan dan menghargai perasaan syg ❤️. Syg ❤️ tidak pernah sendiri, dan abg akan selalu ada untuk syg ❤️! 💪❤️</p>
+        <p>Maafkan semua kebodohan abg dan izinkan abg memperbaiki segalanya, ya? 🙌🥰</p>
+    </div>
+
+    <div class="slide">
+        <h2> Cinta Selamanya 💞</h2>
+        <p>Setiap detik bersamamu adalah anugerah. Mari kita bersama-sama mengatasi semua rintangan! 🌈</p>
+        <p>Fadillah, syg ❤️ adalah bintang dalam hidup abg 🌟. Abg mencintai syg ❤️ lebih dari kata-kata bisa ungkapkan! 😘💖</p>
+        <div class="love-message">I LOVE YOU DILA 😘</div> <!-- Pesan besar ditambahkan -->
+    </div>
+
+
+
+    <button class="button" onclick="plusSlides(1)">Klik yng ❯</button>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex].style.display = "block";  
+        }
+    </script>
+
+</body>
+</html>
